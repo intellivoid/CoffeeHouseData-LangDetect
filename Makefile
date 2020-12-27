@@ -16,4 +16,5 @@ clean:
 	done
 
 pack:
-	zip release.zip langdetect_build profiles lang-identifier-v1.1-sklearn.pkl.gz
+	rm release.zip
+	zip -r release.zip langdetect_build profiles lang-identifier-v1.1-sklearn.pkl.gz
